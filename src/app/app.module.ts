@@ -7,7 +7,8 @@ import { APP_ROUTES } from "./app-routes";
 
 //Modulos
 import { PagesModule } from "./pages/pages.module";
-import { ShareModule } from "./shared/share.module"
+import { ShareModule } from "./shared/share.module";
+import { ComponentsModule } from "./components/components.module"
 
 //Components
 import { AppComponent } from './app.component';
@@ -19,13 +20,14 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    ShareModule
+    ShareModule,
+    ComponentsModule
 
   ],
   providers: [],

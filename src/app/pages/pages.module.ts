@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+
+//imports Modules
+import {ComponentsModule} from '../components/components.module'
 import { CommonModule } from '@angular/common';
 import { PagesRoutes } from './pages.routes';
 import { ShareModule } from '../shared/share.module'
@@ -26,7 +29,8 @@ import { ProgressComponent } from './progress/progress.component';
   imports: [
     CommonModule,
     ShareModule,
-    PagesRoutes
+    PagesRoutes,
+    ComponentsModule
   ]
 })
 export class PagesModule { }

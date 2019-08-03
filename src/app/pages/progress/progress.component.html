@@ -1,3 +1,35 @@
-<p>
-  progress works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">Progress Bar</h6>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.aria-valuenow]="progresAzul" aria-valuemin="0" aria-valuemax="100" [style.width]="progresAzul + '%'"></div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" [attr.aria-valuenow]="progresAmar" aria-valuemin="0" aria-valuemax="100" [style.width]="progresAmar + '%'"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-5">
+    <div class="card">
+      <div class="card-body">
+        <app-incrementador titulo="Barra Azul"  [progreso]="progresAzul" (control)="progresAzul = $event"></app-incrementador>
+      </div>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class="card">
+      <div class="card-body">
+        <app-incrementador titulo="Barra Amarilla" [progreso]="progresAmar" (control)="progresAmar = $event"></app-incrementador>
+      </div>
+    </div>
+  </div>
+</div>
