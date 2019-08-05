@@ -7,7 +7,7 @@
       <i class="mdi mdi-minus-circle-outline"></i>
     </button>
   </div>
-  <input name="valIng" type="text" class="form-control" [(ngModel)]="progreso" (ngModelChange)="ngMoChange($event)" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+  <input name="valIng" #viewChildtag type="text" class="form-control" [(ngModel)]="progreso" (ngModelChange)="ngMoChange($event)" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
   <div class="input-group-append">
     <button class="btn btn-outline-primary" (click)="cambiarVal(+5)" type="button" id="button-addon2">
       <i class="mdi mdi-plus-circle-outline"></i>
