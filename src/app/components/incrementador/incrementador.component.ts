@@ -23,11 +23,10 @@ export class IncrementadorComponent implements OnInit {
   ngOnInit() {
   }
 
-  elem: any = document.getElementsByTagName("valIng")[0].value();
+
 
   cambiarVal(val: number) {
-    console.log(this.elem);
-    this.progreso = Number.parseInt(this.progreso);
+    // this.progreso = Number.parseInt(this.progreso);
     if (this.progreso > 100)
       this.progreso = 100
     if (this.progreso < 0)
@@ -39,7 +38,6 @@ export class IncrementadorComponent implements OnInit {
     }
   }
   ngMoChange(event: string) {
-    console.log(this.elem);
     let ent: number = parseInt(event);
     if (!Number.isNaN(ent)) {
       if (ent > 100)
