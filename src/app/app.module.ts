@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './login/register.component';
 import { LoginComponent } from './login/login.component';
 
-
 // Rutas
 import { APP_ROUTES } from "./app-routes";
 

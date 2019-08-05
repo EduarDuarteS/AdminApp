@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 
+// npm i --save ng2-charts ---- npm install --save chart.js
+//dowgrade npm install ng2-charts@2.2.3
+import { ChartsModule } from 'ng2-charts';
+
 //imports Modules
-import {ComponentsModule} from '../components/components.module'
+import { ComponentsModule } from '../components/components.module'
 import { CommonModule } from '@angular/common';
 import { PagesRoutes } from './pages.routes';
 import { ShareModule } from '../shared/share.module'
@@ -24,13 +28,14 @@ import { ProgressComponent } from './progress/progress.component';
     PagesComponent,
     Graficas1Component,
     DashboardComponent,
-    ProgressComponent
+    ProgressComponent,
   ],
   imports: [
     CommonModule,
     ShareModule,
     PagesRoutes,
-    ComponentsModule
+    ComponentsModule,
+    ChartsModule
   ]
 })
 export class PagesModule { }
