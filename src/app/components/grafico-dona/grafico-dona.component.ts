@@ -12,9 +12,9 @@ export class GraficoDonaComponent implements OnInit {
   @Input() data: any;
   constructor() { }
 
-  // public doughnutChartLabels: Label[] = this.data.labels;
-  // public doughnutChartData: MultiDataSet = this.data.data;
-  // public doughnutChartType: ChartType = this.data.type;
+  public doughnutChartLabels: Label[] = [];
+  public doughnutChartData: MultiDataSet = [];
+  public doughnutChartType: ChartType = 'doughnut';
   ngOnInit() {
     console.log(this.data);
     // Doughnut
@@ -32,13 +32,13 @@ export class GraficoDonaComponent implements OnInit {
   */
 
   // Doughnut
-  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: MultiDataSet = [
-    [350, 450, 100],
-    // [50, 150, 120],
-    // [250, 130, 70],
-  ];
-  public doughnutChartType: ChartType = 'doughnut';
+  // public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
+  // public doughnutChartData: MultiDataSet = [
+  //   [350, 450, 100],
+  //   // [50, 150, 120],
+  //   // [250, 130, 70],
+  // ];
+  // public doughnutChartType: ChartType = 'doughnut';
 
 
 }

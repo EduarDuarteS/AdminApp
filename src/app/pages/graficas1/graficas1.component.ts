@@ -11,32 +11,36 @@ export class Graficas1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.graficos);
   }
 
-  graficos: any = {
-    'grafico1': {
+
+
+  graficos: any = [
+    {grafico: {
       'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
       'data': [24, 30, 46],
       'type': 'doughnut',
       'leyenda': 'El pan se come con'
-    },
-    'grafico2': {
+    }},
+    {grafico: {
       'labels': ['Hombres', 'Mujeres'],
       'data': [4500, 6000],
       'type': 'doughnut',
       'leyenda': 'Entrevistados'
-    },
-    'grafico3': {
+    }},
+    {grafico: {
       'labels': ['Si', 'No'],
       'data': [95, 5],
       'type': 'doughnut',
       'leyenda': '¿Le dan gases los frijoles?'
-    },
-    'grafico4': {
+    }},
+    {grafico: {
       'labels': ['No', 'Si'],
       'data': [85, 15],
       'type': 'doughnut',
       'leyenda': '¿Le importa que le den gases?'
-    },
-  };
+    }},
+  ];
+  grafics : Array<any> = Array.of(this.graficos);
 }
