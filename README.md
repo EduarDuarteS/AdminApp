@@ -28,6 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## New Tags
 
-git tag -a v1.1.0 -m 'viewChild and ng2-charts'
-git tag
-git push origin --tags
+# git tag -a v1.1.0 -m 'viewChild and ng2-charts'
+# git tag
+# git push origin --tags
