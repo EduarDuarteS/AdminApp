@@ -7,20 +7,20 @@
         <div class="r-panel-body">
           <ul id="themecolors" class="m-t-20">
             <li><b>Con el sidebar claro</b></li>
-            <li><a data-theme="default" class="selector default-theme">1</a></li>
-            <li><a data-theme="green" class="selector green-theme">2</a></li>
-            <li><a data-theme="red" class="selector red-theme">3</a></li>
-            <li><a data-theme="blue" class="selector blue-theme">4</a></li>
-            <li><a data-theme="purple" class="selector purple-theme">5</a></li>
-            <li><a data-theme="megna" class="selector megna-theme">6</a></li>
+            <li><a #default (click)="changeTheme('default', default)" data-theme="default" class="selector default-theme">1</a></li>
+            <li><a #green (click)="changeTheme('green', green)" data-theme="green" class="selector green-theme">2</a></li>
+            <li><a #red (click)="changeTheme('red', red)" data-theme="red" class="selector red-theme">3</a></li>
+            <li><a #blue (click)="changeTheme('blue', blue)" data-theme="blue" class="selector blue-theme">4</a></li>
+            <li><a #purple (click)="changeTheme('purple', purple)" data-theme="purple" class="selector purple-theme">5</a></li>
+            <li><a #megna (click)="changeTheme('megna', megna)" data-theme="megna" class="selector megna-theme">6</a></li>
 
             <li class="d-block m-t-30"><b>Con el sidebar oscuro</b></li>
-            <li><a data-theme="default-dark" class="selector default-dark-theme">7</a></li>
-            <li><a data-theme="green-dark" class="selector green-dark-theme">8</a></li>
-            <li><a data-theme="red-dark" class="selector red-dark-theme">9</a></li>
-            <li><a data-theme="blue-dark" class="selector blue-dark-theme working">10</a></li>
-            <li><a data-theme="purple-dark" class="selector purple-dark-theme">11</a></li>
-            <li><a data-theme="megna-dark" class="selector megna-dark-theme">12</a></li>
+            <li><a #defaultdark (click)="changeTheme('default-dark', defaultdark)" data-theme="default-dark" class="selector default-dark-theme working">7</a></li>
+            <li><a #greendark (click)="changeTheme('green-dark', greendark)" data-theme="green-dark" class="selector green-dark-theme">8</a></li>
+            <li><a #reddark (click)="changeTheme('red-dark', reddark)" data-theme="red-dark" class="selector red-dark-theme">9</a></li>
+            <li><a #bluedark (click)="changeTheme('blue-dark', bluedark)" data-theme="blue-dark" class="selector blue-dark-theme">10</a></li>
+            <li><a #purpledark (click)="changeTheme('purple-dark', purpledark)" data-theme="purple-dark" class="selector purple-dark-theme">11</a></li>
+            <li><a #megnadark (click)="changeTheme('megna-dark', megnadark)" data-theme="megna-dark" class="selector megna-dark-theme">12</a></li>
           </ul>
         </div>
       </div>
